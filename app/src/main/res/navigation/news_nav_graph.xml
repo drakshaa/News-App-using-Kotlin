@@ -7,24 +7,25 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.example.newsapp.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" >
+        android:label="ArticleFragment">
         <argument
             android:name="article"
-            app:argType="com/example/newsapp/models/Article.kt"
-
+            app:argType="com.example.newsapp.models.Article" />
     </fragment>
+
     <fragment
         android:id="@+id/searchFragment2"
         android:name="com.example.newsapp.ui.fragments.SearchFragment"
-        android:label="SearchFragment" >
+        android:label="SearchFragment">
         <action
             android:id="@+id/action_searchFragment2_to_articleFragment"
             app:destination="@id/articleFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/headlineFragment"
         android:name="com.example.newsapp.ui.fragments.HeadlineFragment"
-        android:label="HeadlineFragment" >
+        android:label="HeadlineFragment">
         <action
             android:id="@+id/action_headlineFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
